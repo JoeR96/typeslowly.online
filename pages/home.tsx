@@ -11,8 +11,10 @@ const [currentImages, setCurrentImages] = React.useState(imageCollection[index])
 
 
   React.useEffect(() => {
-    
-    setCurrentImages(imageCollection[index])
+    if(index < imageCollection.length)
+    {
+        setCurrentImages(imageCollection[index])
+    }    
     return () => {
       
     }

@@ -83,11 +83,11 @@ export const LF = [LF1, LF2, LF3, LF4, LF5, LF6, LF7, LF8, LF9, LF10, LF11, LF12
 
 
 const PrtImage1 = '/PortraitImages/Portraits-01.png'
-const PrtImage2 = '/PortraitImages/Portraits-01.png'
-const PrtImage3 = '/PortraitImages/Portraits-01.png'
-const PrtImage4 = '/PortraitImages/Portraits-01.png'
-const PrtImage5 = '/PortraitImages/Portraits-01.png'
-const PrtImage6 = '/PortraitImages/Portraits-01.png'
+const PrtImage2 = '/PortraitImages/Portraits-02.png'
+const PrtImage3 = '/PortraitImages/Portraits-03.png'
+const PrtImage4 = '/PortraitImages/Portraits-04.png'
+const PrtImage5 = '/PortraitImages/Portraits-05.png'
+const PrtImage6 = '/PortraitImages/Portraits-06.png'
 
 export const PortraitImages = [PrtImage1, PrtImage2, PrtImage3, PrtImage4, PrtImage5, PrtImage6]
 
