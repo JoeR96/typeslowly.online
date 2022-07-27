@@ -5,7 +5,7 @@ import {homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPIma
 
   
 const Layout = () => {
-    const imageCollection = [homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPImages]
+const imageCollection = [homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPImages]
 const [index,setIndex] = React.useState(0);
 const [currentImages, setCurrentImages] = React.useState(imageCollection[index]);
 
@@ -18,7 +18,7 @@ const [currentImages, setCurrentImages] = React.useState(imageCollection[index])
     return () => {
       
     }
-  }, [index])
+  }, [index,imageCollection])
 
     return (  
         
