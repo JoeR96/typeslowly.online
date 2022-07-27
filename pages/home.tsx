@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Grid,Box } from '@mui/material';
 import { motion } from "framer-motion";
-import {homeImages,FFImages,AMImages} from '../data'
+import {homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPImages} from '../data'
 
   
 const Layout = () => {
-    const imageCollection = [homeImages,FFImages,AMImages]
+    const imageCollection = [homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPImages]
 const [index,setIndex] = React.useState(0);
 const [currentImages, setCurrentImages] = React.useState(imageCollection[index]);
 
