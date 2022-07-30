@@ -37,6 +37,7 @@ const [currentImages, setCurrentImages] = React.useState(imageCollection[index])
                                     md={3} 
                                     xl={3} 
                                     lg={3}
+                                    key={index}
                                   >
                                        <motion.img src={x}
                                         key={index}
