@@ -18,7 +18,7 @@ const [currentImages, setCurrentImages] = React.useState(imageCollection[index])
     return () => {
       
     }
-  }, [index])
+  }, [imageCollection,index])
 
     return (  
         
