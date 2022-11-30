@@ -39,7 +39,7 @@ const [currentImages, setCurrentImages] = React.useState(imageCollection[index])
                                     lg={3}
                                     key={index}
                                   >
-                                       <motion.img src={x}
+                                <motion.img src={"http://d7dhx22ybeiu9.cloudfront.net/"+x}
                                         key={index}
                                         whileHover={{
                                            opacity:1,
