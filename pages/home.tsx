@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Grid,Box } from '@mui/material';
 import { motion } from "framer-motion";
 import {homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPImages} from '../data'
-
+import Image from 'next/image';
   
 const Layout = () => {
   const imageCollection = React.useMemo(() => [homeImages,FFImages,AMImages,LSImages,LogoImages,LF,PortraitImages,TPImages], []);
@@ -38,24 +38,30 @@ const [currentImages, setCurrentImages] = React.useState(imageCollection[index])
                                     xl={3} 
                                     lg={3}
                                     key={index}
+                              
                                   >
-                                <motion.img src={"http://d7dhx22ybeiu9.cloudfront.net/"+x}
-                                        key={index}
-                                        whileHover={{
-                                           opacity:1,
-                                   
-                                           scale: 1.5,
-                                           textShadow: "0px 0px 4px gray"
-                                         }}
-                                       style={{display:'block',
-                                         border:'5px red',
-                                         margin: '0 auto',
-                                         padding: '0%',
-                                         width:'100%'
-                                   }}
-                                   onClick={() => setIndex(index)}
+                                <div>
+                                  <img src={"http://d7dhx22ybeiu9.cloudfront.net/" + x}
+                                    // width={400}
+                                    // height={400}
+                                    key={index}
+                                    // whileHover={{
+                                    //    opacity:1,
 
-                                       ></motion.img>
+                                    //    scale: 1.5,
+                                    //    textShadow: "0px 0px 4px gray"
+                                    //  }}
+                                    style={{
+                                      display: 'block',
+                                      border: '5px red',
+                                      margin: '0 auto',
+                                      padding: '0%',
+                                      width: '100%'
+                                    }}
+                                    onClick={() => setIndex(index)}
+
+                                  ></img>
+                               </div>
                                      
                                    </Grid> 
                             )
